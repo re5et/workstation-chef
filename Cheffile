@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+site 'http://community.opscode.com/api/v1'
+
+# server base cookbooks
+cookbook 'apt'
+cookbook 'git'
+cookbook 'ubuntu'
+cookbook 'build-essential'
+cookbook 'ntp'
+cookbook 'unattended-upgrades', :git => 'https://github.com/patdeegan/chef-unattended-upgrades.git'
+cookbook 'imagemagick'
+cookbook 'mysql'
+cookbook 'mongodb'
+cookbook 'nodejs'
+cookbook 'ruby_build'

@@ -16,6 +16,7 @@ run_list(
   )
 
 default_attributes({
+    :ruby => '1.9.3-p448',
     :mysql => {
       :server_root_password => '',
       :server_debian_password => '',

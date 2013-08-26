@@ -13,7 +13,7 @@ end
   end
 end
 
-%w{nmap zsh xscreensaver electricsheep dmenu texinfo sbcl cl-clx-sbcl cl-ppcre sakura ncurses-term}.each do |pkg|
+%w{linux-headers-generic nmap zsh xscreensaver electricsheep dmenu texinfo sbcl cl-clx-sbcl cl-ppcre sakura ncurses-term acpi virtualbox sshfs chromium-browser avahi-daemon avahi-discover imagemagick}.each do |pkg|
   package pkg do
     action :install
   end

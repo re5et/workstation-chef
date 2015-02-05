@@ -1,9 +1,8 @@
 VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "package.box"
-  config.vm.base_mac = "08002721F23D"
   config.ssh.forward_agent = true
-
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.box_url = "https://vagrantcloud.com/ubuntu/boxes/trusty64"
   config.vm.synced_folder '.', '/vagrant', disabled: true
 
   config.vm.network :private_network, ip: "172.16.1.111"
